@@ -6127,7 +6127,7 @@ button.bg-success:focus {
 }
 
 .bg-info {
-  background-color: #17a2b8 !important;
+  background-color: #c1e0e5 !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
@@ -9795,7 +9795,7 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .text-primary {
@@ -9807,7 +9807,8 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #343a40 !important;
+  padding-bottom: 30px;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -10090,7 +10091,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #092949;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10112,8 +10113,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -10133,3 +10134,18 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.portfolioalink{
+  color: #3700ff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px
+}
+.portfoliodiv{
+  padding-bottom: 20px;
+}
+
+
+
