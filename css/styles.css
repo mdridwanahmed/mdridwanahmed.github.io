@@ -2445,7 +2445,7 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-left: px;
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -2465,6 +2465,9 @@ textarea.form-control {
 }
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
+  font-family:sans-serif;
+  font-size: 17px;
+  font-weight: 700;
 }
 a.btn.disabled,
 fieldset:disabled a.btn {
@@ -2927,10 +2930,10 @@ fieldset:disabled a.btn {
 }
 .btn-link:hover {
   color: #824027;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -4550,11 +4553,14 @@ input[type=button].btn-block {
 
 .accordion > .card {
   overflow: hidden;
+  
 }
 .accordion > .card:not(:last-of-type) {
   border-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  font-family:sans-serif;
+  font-size: 15px;
 }
 .accordion > .card:not(:first-of-type) {
   border-top-left-radius: 0;
@@ -4563,6 +4569,8 @@ input[type=button].btn-block {
 .accordion > .card > .card-header {
   border-radius: 0;
   margin-bottom: -1px;
+  
+
 }
 
 .breadcrumb {
