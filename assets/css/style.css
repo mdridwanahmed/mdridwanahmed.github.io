@@ -1200,3 +1200,11 @@ section {
   color: #6c757d;
   pointer-events: none;
 }
+
+/**Contact Form CSS***/
+.form-row{
+  margin-top: 10px;
+}
+.form-control{
+  padding: 1.375rem .75rem;
+}
