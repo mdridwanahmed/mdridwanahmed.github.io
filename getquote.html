@@ -80,7 +80,29 @@
          
               <div class="form-row"> 
                 <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" name="Service" id="service" placeholder="Needed Service" data-rule=" minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <select name="service" id="service" required style="display: block;
+                  width: 100%;
+                  height: calc(2em + .75rem + 2px);
+                  padding: .375rem .75rem;
+                  font-size: 1rem;
+                  font-weight: 400;
+                  line-height: 1.5;
+                  color: #495057;
+                  background-color: #fff;
+                  background-clip: padding-box;
+                  border: 1px solid #ced4da;
+                  border-radius: .25rem;
+                  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;" >
+                    <option value="ST" style="color:black;"> Select Your Needed Service</option>
+                    <option value="WC">WordPress Theme Customization</option> 
+                    <option value="EC">Ecommerce</option>               
+                    <option value="PH">PSD/Figma to HTML/Bootstrap</option>
+                    <option value="WS">WordPress SEO</option>
+                    <option value="WW">WordPress Website Development </option>
+                    <option value="WO">WooCommerce Theme Customization</option>
+                    <option value="LP">Landing Page with Elementor</option>
+                    <option value="MC">Mailchimp</option>
+                  </select>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
@@ -102,7 +124,16 @@
                 border: none;
                 padding: 10px 25px 10px 25px;
                 margin-top: 15px;
-                border-radius: 10px;">Submit</button></div>
+                border-radius: 10px;">Submit</button>
+                
+                <button type="reset" name="reset" value="Reset"style="background: #026b62;
+                color: white;
+                font-size: 25px;
+                border: none;
+                padding: 10px 40px 10px 25px;
+                margin-top: 15px;
+                border-radius: 10px; " >Reset</button>
+              </div>
             </form>
 
           </div>
