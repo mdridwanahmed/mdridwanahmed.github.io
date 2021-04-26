@@ -57,18 +57,18 @@
             style="background-color: #007d73; padding: 40px;">
               <div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" minlength="4" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="Email" id="email" placeholder="Your Email"  required data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
 
               <div class="form-row"> 
                 <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" name="Address" id="address" placeholder="Address" />
+                  <input type="text" class="form-control" name="Address" id="address" placeholder="Address" required />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
@@ -80,7 +80,7 @@
          
               <div class="form-row"> 
                 <div class="col-md-6 form-group">
-                  <select name="service" id="service" required style="display: block;
+                  <select name="Service" id="service" required style="display: block;
                   width: 100%;
                   height: calc(2em + .75rem + 2px);
                   padding: .375rem .75rem;
@@ -93,7 +93,7 @@
                   border: 1px solid #ced4da;
                   border-radius: .25rem;
                   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;" >
-                    <option value="ST" style="color:black;"> Select Your Needed Service</option>
+                    <option value="">Select Your Needed Service</option>
                     <option value="WC">WordPress Theme Customization</option> 
                     <option value="EC">Ecommerce</option>               
                     <option value="PH">PSD/Figma to HTML/Bootstrap</option>
@@ -111,10 +111,21 @@
                 </div>
               </div>
 
+              <div class="form-group">
+                 <div class="radiobutton" style="font-size: 17px; color: rgb(234 234 234);">
+                   <label for="jobtype"> <strong> JOB TYPE: &nbsp;</strong></label>
+                  <input type="radio" name="jobtype" id="jobtype" > FULL-TIME&nbsp;&nbsp;
+                  <!----Checkbox allow user to choose multiple option-->
+                  <input type="radio" name="jobtype" id="jobtype"> PART-TIME&nbsp;&nbsp;
+                  <input type="radio" name="jobtype" id="jobtype"> CONTRACT&nbsp;&nbsp;
+                  <div class="validate"></div>
+                </div> 
+              </div>
+
              
 
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="What is this project about?"></textarea>
+                <textarea class="form-control" name="Message" rows="5" required placeholder="What is this project about?"></textarea>
                 <div class="validate"></div>
               </div>
               
